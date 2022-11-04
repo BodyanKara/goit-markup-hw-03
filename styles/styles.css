@@ -18,14 +18,32 @@ h1,h2,h3,h4,h5,h6,p{
     margin-top: 0;
     margin-bottom: 0;
 }
-            /* LOGO */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.section{
+    padding-bottom: 94px;
+    padding-top: 94px;
+}
+ /* Header */
 .page-header{
     background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(236, 236, 236, 1);
+}
+.head-container{
+    min-height: 80px;
+    
 }
 .container{
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
+}
+.main-nav{
+    display:flex;
+    align-items: center;
 }
 .logo {
     color: var(--secondary-text-color);
@@ -35,6 +53,7 @@ h1,h2,h3,h4,h5,h6,p{
     line-height: 1.1;
     letter-spacing: 0.03em;
     text-decoration: none;
+    margin-right:93px;
 }
 
 .logo .logo-first {
@@ -43,12 +62,20 @@ h1,h2,h3,h4,h5,h6,p{
 .logo .logo-second{
     color: #000000;
 }
-            /* Header */
+
 .site-nav-list{
     list-style: none;
+    display: flex;
 }
 .contact-list {
+    display: flex;
     list-style: none;
+    margin-left: auto;
+}
+
+.site-nav-list .item:not(:last-child){
+    margin-right: 50px;
+   
 }
 
 .site-nav .link{
@@ -59,6 +86,10 @@ h1,h2,h3,h4,h5,h6,p{
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.contact-list .item:not(:last-child){
+    margin-right:50px ;
+}
+
 .contact-list .link{
     color: var(--primary-text-color);
     font-weight: 500;
@@ -121,8 +152,11 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .special-list{
     list-style: none;
+    display: flex;
 }
-
+.special-list .item:not(:last-child){
+    margin-right: 30px;
+}
 .special-title {
     color: var(--secondary-text-color);
     font-weight: 700;
@@ -156,6 +190,8 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .work-list{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Наша команда */
@@ -176,6 +212,12 @@ h1,h2,h3,h4,h5,h6,p{
 }
 .team-list{
     list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.team-list .item{
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .member-photo{
     margin-bottom: 30px;
@@ -264,6 +306,17 @@ color: var(--secondary-text-color);
 footer{
     background: #2F303A;
 }
+.foot-container{
+    min-height: 257px;
+}
+.main-contact{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.logo-f{
+    margin-bottom: 20px;
+}
 .logo-first-f{
     color: #2196F3;
 }
@@ -286,4 +339,7 @@ footer{
 .contact-list-f .link{
     color: var(--primary-text-color);
     text-decoration: none;
+}
+.main-contact .item:not(:last-child){
+    margin-bottom: 9px;
 }
