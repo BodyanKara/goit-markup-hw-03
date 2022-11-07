@@ -411,6 +411,8 @@ color: var(--secondary-text-color);
 .contact-list.main-contact .link{
     color: rgba(255, 255, 255, 60%);
     text-decoration: none;
+    padding: 0;
+    line-height: 1.71;
 }
 .contact-list .link:hover,
 .contact-list .link:focus {
